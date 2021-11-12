@@ -1,4 +1,5 @@
 import 'package:alim_app/scr/screens/auth_screeen.dart';
+import 'package:alim_app/scr/screens/register.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return CupertinoApp(
       title: 'Flutter ',
-      home: AuthScreen(),
+      home: RegisterScreen(),
     );
   }
 }
