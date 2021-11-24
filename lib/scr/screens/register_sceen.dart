@@ -6,7 +6,7 @@ class RegisterScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CupertinoPageScaffold(
-      backgroundColor: Color(0xFFF3F4F6),
+      backgroundColor: Color(0xFFF3F4F0),
       navigationBar: CupertinoNavigationBar(
         backgroundColor: CupertinoColors.white,
         border: Border(),
@@ -17,6 +17,9 @@ class RegisterScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
+              SizedBox(
+                height: 30,
+              ),
               CupertinoTextField(
                 placeholder: 'Логин',
                 decoration: BoxDecoration(color: CupertinoColors.white),
@@ -67,7 +70,8 @@ class RegisterScreen extends StatelessWidget {
                 child: CupertinoButton(
                     padding: const EdgeInsets.symmetric(vertical: 20),
                     color: Color(0xFF4631D2),
-                    child: Text('Зарегистрироваться'),
+                    child: Text('Создать аккаунт',
+                        style: TextStyle(fontWeight: FontWeight.bold)),
                     onPressed: () {}),
               ),
               SizedBox(

@@ -1,3 +1,5 @@
+import 'package:alim_app/scr/screens/register_sceen.dart';
+import 'package:alim_app/scr/screens/router/routing_const.dart';
 import 'package:flutter/cupertino.dart';
 
 class AuthScreen extends StatelessWidget {
@@ -51,7 +53,9 @@ class AuthScreen extends StatelessWidget {
                   color: Color(0xFF4631D2),
                   child: Text('Зарегестрируйтесь',
                       style: TextStyle(fontWeight: FontWeight.bold)),
-                  onPressed: () {}),
+                  onPressed: () {
+                    Navigator.pushNamed(context, RegisterRoute);
+                  }),
             ),
           ],
         ),
